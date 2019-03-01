@@ -3,7 +3,17 @@
 def calculate(arg):
     stack = []
     tokens = arg.split()
-    print(tokens)
+    firstOperand = tokens[0]
+    tokens.pop(0)
+    secondOperand = tokens[0]
+    tokens.pop(0)
+    operator = tokens[0]
+    tokens.pop(0)
+    if operator == '+':
+        tokens.insert(0, (str)((int(firstOperand)) + (int(secondOperand))))
+    elif operator == '-':
+        tokens.insert(0, (str)((int(firstOperand)) - (int(secondOperand))))
+    return tokens[0]
     pass
 
 def main():
