@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 def calculate(arg):
+    stack = []
+    tokens = arg.split()
+    print(tokens)
     pass
 
 def main():
