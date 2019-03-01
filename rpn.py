@@ -13,7 +13,7 @@ def calculate(arg):
         tokens.insert(0, (str)((int(firstOperand)) + (int(secondOperand))))
     elif operator == '-':
         tokens.insert(0, (str)((int(firstOperand)) - (int(secondOperand))))
-    return tokens[0]
+    return int(tokens[0])
     pass
 
 def main():
